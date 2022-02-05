@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "jsonify",
+  "version": "${version}",
+  "name": "Jsonify",
+  "description": "Converts entity models into swappable JSON (bedrock) models ",
+  "authors": [
+    "dopadream"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/jsonify/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dopadream.jsonify.client.JsonifyClient"
+    ],
+    "main": [
+      "dopadream.jsonify.Jsonify"
+    ]
+  },
+  "mixins": [
+    "jsonify.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.0",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  }
+}
